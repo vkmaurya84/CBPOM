@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+	<!--   <groups>
+	  	<run>
+	  		<include name="Contact"/>
+	  		<include name="MyCards"/>
+	  		<include name="Favourite"/>
+	  		<include name="Company"/>
+	  		<include name="Industry"/>
+	  		<include name="Profession"/>
+	  		<include name="Tags"/>
+	  		<include name="Search"/>
+	  		<include name="LogOut"/>
+	  		<include name="Settings"/>
+	  	</run>
+ 	 </groups>  -->
+ 	 
+ 	 <groups>
+	  	<run>
+	  		<exclude name="Contact"/>
+	  		<exclude name="MyCards"/>
+	  		<exclude name="Favourite"/>
+	  		<exclude name="Company"/>
+	  		<exclude name="Industry"/>
+	  		<exclude name="Profession"/>
+	  		<exclude name="Tags"/>
+	  		<exclude name="Search"/>
+	  		<exclude name="LogOut"/>
+	  		<exclude name="Settings"/>
+	  	</run>
+ 	 </groups>
+  
+    <classes>
+      <class name="testCases.LoginApp"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
